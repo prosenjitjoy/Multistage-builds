@@ -6,7 +6,7 @@ RUN go get -d -v
 RUN go build -v
 
 # Runtime image
-FROM registry.access.redhat.com/ubi9/ubi-micro:latest
+FROM docker.io/redhat/ubi9-micro:latest
 COPY --from=0 /go/src/main /
 EXPOSE 8080
 CMD ["/main"]
