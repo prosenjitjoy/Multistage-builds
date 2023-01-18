@@ -10,3 +10,7 @@ Let's say we want to leverage the benefits of the standardized environment (Cont
 {docker/podman/buildah} build -t {tagname} .
 ```
 ## With buildah
+```
+chmod +x ./multistage-buildah.sh 
+./multistage-buildah.sh 
+```
